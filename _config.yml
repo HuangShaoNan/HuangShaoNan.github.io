@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 猿叔的博客
 subtitle:
-description:
+description: 前端,一只小猴子,博客
 keywords:
-author: John Doe
-language:
+author: Shaonanh
+language: zh-Hans
 timezone:
 
 # URL
