@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ac7f4e6-e30f-4f97-ab33-5d0b676b3044" name="Default" comment="fix: 测试">
+    <list default="true" id="5ac7f4e6-e30f-4f97-ab33-5d0b676b3044" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/themes/next" afterPath="$PROJECT_DIR$/themes/next" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -168,17 +169,6 @@
               <item name="HuangShaoNan.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="HuangShaoNan.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HuangShaoNan.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HuangShaoNan.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HuangShaoNan.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HuangShaoNan.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -216,7 +206,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526535883410</updated>
-      <workItem from="1526535885989" duration="6891000" />
+      <workItem from="1526535885989" duration="7093000" />
     </task>
     <task id="LOCAL-00001" summary="fix:">
       <created>1526536018296</created>
@@ -260,11 +250,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526551878800</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: 测试">
+      <created>1526554281074</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526554281074</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6891000" />
+    <option name="totallyTimeSpent" value="7093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="6" />
@@ -297,10 +294,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix:" />
     <MESSAGE value="fix: 修改title" />
-    <MESSAGE value="fix: 测试" />
     <MESSAGE value="fix: 测试删除" />
     <MESSAGE value="fix: 新增next主题" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 新增next主题" />
+    <MESSAGE value="fix: 测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
