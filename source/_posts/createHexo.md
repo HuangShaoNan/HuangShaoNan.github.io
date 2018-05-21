@@ -19,7 +19,7 @@ $ npm install -g hexo-cli
 
 然后你在电脑新建一个空的文件夹,命名就以userName.github.io,例如:HuangShaoNan.github.io,终端进入新建文件夹下 执行命令
 ```
-$ npm init 
+$ hexo init 
 ```
 
 等待一定时间,你会看到你新建的文件夹里出现了好多初始化文件,现在这个时候一个基本的简单博客搭建成功了,你运行以下命令
