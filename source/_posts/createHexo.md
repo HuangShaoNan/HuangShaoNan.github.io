@@ -109,11 +109,11 @@ repo: git@github.com:HuangShaoNan/HuangShaoNan.github.io.git  //此处记得改�
 
 然后 hexo s 就能看到你修改的主题生效了,为了防止 clone 下来的主题文件和自己的博客文件冲突,我删除了clone 下来的 .git 文件,具体步骤为:
 ```
-进入到next文件下 执行 `ls -a` 查看.git文件是否存在，存在的话执行 `rm -rf .git` 删除.git文件，再次 `ls -a`查看
-添加next文件更改, 进入到根目录下 执行 `$ git add .`
-提交修改 `$ git commit -m 'add next 主题'`
-push到远程 `$ git push origin dev`
-最后别忘了发布你的博客 `npm run deploy` 发布完成后 你就可以在网址中访问你的userName.github.io博客了
+进入到next文件下 执行 ls -a 查看.git文件是否存在，存在的话执行 rm -rf .git 删除.git文件，再次 ls -a 查看
+添加next文件更改, 进入到根目录下 执行 $ git add .
+提交修改 $ git commit -m 'add next 主题'
+push到远程 $ git push origin dev
+最后别忘了发布你的博客 npm run deploy 发布完成后 你就可以在网址中访问你的userName.github.io博客了
 ```
 
 当然除了更换主题外，还可以设置页面布局的方式，具体配置可以进入到next文件下的 _config.yml文件进行修改.
