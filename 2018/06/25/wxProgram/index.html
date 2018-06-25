@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="前端,一只小猴子,博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="猿叔的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="新入职公司后，一直在参与几个小程序项目的开发，在开发的过程中也遇到了困扰和问题，今天就来总结归纳一下，也希望可以为新入门的朋友带一些帮助，避免入坑。 1.路由跳转问题小程序提供五种路由跳转方式，每种有不同的功能，要仔细阅读文档，根据需求适当使用1.若要跳转的目标路由页面是tabBar配置，则只能使用wx.switchTab方法，且路径后不能携带参数。2.若正常跳转使用wx.navigateTo，保">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小程序开发总结(一)">
+<meta property="og:url" content="http://yoursite.com/2018/06/25/wxProgram/index.html">
 <meta property="og:site_name" content="猿叔的博客">
-<meta property="og:description" content="前端,一只小猴子,博客">
+<meta property="og:description" content="新入职公司后，一直在参与几个小程序项目的开发，在开发的过程中也遇到了困扰和问题，今天就来总结归纳一下，也希望可以为新入门的朋友带一些帮助，避免入坑。 1.路由跳转问题小程序提供五种路由跳转方式，每种有不同的功能，要仔细阅读文档，根据需求适当使用1.若要跳转的目标路由页面是tabBar配置，则只能使用wx.switchTab方法，且路径后不能携带参数。2.若正常跳转使用wx.navigateTo，保">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-25T08:06:45.577Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="猿叔的博客">
-<meta name="twitter:description" content="前端,一只小猴子,博客">
+<meta name="twitter:title" content="小程序开发总结(一)">
+<meta name="twitter:description" content="新入职公司后，一直在参与几个小程序项目的开发，在开发的过程中也遇到了困扰和问题，今天就来总结归纳一下，也希望可以为新入门的朋友带一些帮助，避免入坑。 1.路由跳转问题小程序提供五种路由跳转方式，每种有不同的功能，要仔细阅读文档，根据需求适当使用1.若要跳转的目标路由页面是tabBar配置，则只能使用wx.switchTab方法，且路径后不能携带参数。2.若正常跳转使用wx.navigateTo，保">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/25/wxProgram/"/>
 
 
 
 
 
-  <title>猿叔的博客</title>
+  <title>小程序开发总结(一) | 猿叔的博客</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/25/wxProgram/" itemprop="url">小程序开发总结(一)</a></h1>
+          <h1 class="post-title" itemprop="name headline">小程序开发总结(一)</h1>
         
 
         <div class="post-meta">
@@ -301,9 +299,7 @@
       
 
       
-        
-          
-            <p>新入职公司后，一直在参与几个小程序项目的开发，在开发的过程中也遇到了困扰和问题，今天就来总结归纳一下，也希望可以为新入门的朋友带一些帮助，避免入坑。</p>
+        <p>新入职公司后，一直在参与几个小程序项目的开发，在开发的过程中也遇到了困扰和问题，今天就来总结归纳一下，也希望可以为新入门的朋友带一些帮助，避免入坑。</p>
 <h3 id="1-路由跳转问题"><a href="#1-路由跳转问题" class="headerlink" title="1.路由跳转问题"></a>1.路由跳转问题</h3><p>小程序提供五种路由跳转方式，每种有不同的功能，要仔细阅读文档，根据需求适当使用<br>1.若要跳转的目标路由页面是tabBar配置，则只能使用wx.switchTab方法，且路径后不能携带参数。<br>2.若正常跳转使用wx.navigateTo，保留当前页面，跳转到应用内的某个页面，路径后可带参数<br>3.若要关闭当前页面跳转到应用内的某个页面则可使用wx.redirectTo，路径后可带参数，注意，此时不能返回到上一页面，因上一级页面栈被销毁<br>4.小程序现默认路由嵌套最多十层，注意需求逻辑，不要造成循环，避免路由跳转失效</p>
 <h3 id="2-带参返回上一页几种方法"><a href="#2-带参返回上一页几种方法" class="headerlink" title="2.带参返回上一页几种方法"></a>2.带参返回上一页几种方法</h3><p>有时候我们会有这种需求，有AB页面,从A跳转到B填写完信息后再跳回A，并携带数据。</p>
 <h4 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h4><p><code>把当前页面数据放入本地缓存（ wx.setStorage（wx.setStorageSync），上一个页面再从缓存中取出（wx.getStorage（wx.getStorageSync））同时退出登录时要清除缓存，此方法不建议，下面还有更多方法</code></p>
@@ -315,8 +311,6 @@
 <h4 id="二-进行分包加载处理，传送门"><a href="#二-进行分包加载处理，传送门" class="headerlink" title="二.进行分包加载处理，传送门"></a>二.进行分包加载处理，<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages.html" target="_blank" rel="noopener"><font color="#0099ff">传送门</font></a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">分包的好处是将小程序划分成不同的子包，在构建时打包成不同的分包，用户在使用时按需进行加载</span><br><span class="line">增加项目包体积 整个小程序所有分包大小不超过 8M  单个分包/主包大小不能超过 2M</span><br></pre></td></tr></table></figure>
 <p><font color="#FF0000">但是注意:</font>首页的 TAB 页面必须在 app（主包）内，并且遵循官方给出的引用原则，我们可根据项目需求 拆分成不同的功能模块，进行分包。<br>项目中已经进行分包，现未发现问题，如有问题，及时更新哈。</p>
 
-          
-        
       
     </div>
     
@@ -333,162 +327,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/21/createHexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ShaoNanH">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="猿叔的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/21/createHexo/" itemprop="url">使用hexo搭建个人博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-21T15:08:35+08:00">
-                2018-05-21
-              </time>
+              <a href="/2018/05/21/createHexo/" rel="next" title="使用hexo搭建个人博客">
+                <i class="fa fa-chevron-left"></i> 使用hexo搭建个人博客
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>作为前端,前端技术日新月异，我们每天要保持学习,我们不仅要保持学习,还需要掌握一个好的,适合自己的学习方式,我发现大多数的前端都没有去记录自己的所学所用。<br>好记性不如烂笔头,写博客可以总结知识点,积累零碎片段,况且技术博客现在也是我们面试中可以让面试官快速了解自己的一种方式,那为什么不写?可能一部分人在一些第三方网站去记录学习，这样可能持续性不是很高，那我们就自己建设一个属于我们自己的<br>博客,是不是很酷^_^。</p>
-<p>今天这篇文章会教大家使用hexo结合github搭建一个属于自己的博客,没有github的同学,自己去github上注册一个账号,个人建议作为程序员一定要有一个github,github作为程序员圈子最火爆的社区,你有什么理由不拥有？<br>好啦，下面就教大家怎样去搭建属于你自己的博客。</p>
-<h3 id="快速搭建"><a href="#快速搭建" class="headerlink" title="快速搭建"></a>快速搭建</h3><p>首先你的电脑要有git和node,没有的同学自行安装,安装好git和node之后，我们要在全局安装hexo，命令如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>然后你在电脑新建一个空的文件夹,命名就以userName.github.io,例如:HuangShaoNan.github.io,终端进入新建文件夹下 执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
-<p>等待一定时间,你会看到你新建的文件夹里出现了好多初始化文件,现在这个时候一个基本的简单博客搭建成功了,你运行以下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s 或 hexo s -p 4000</span><br></pre></td></tr></table></figure></p>
-<p>就能在 localhost:4000 中看到一个博客网站了,现在你要做的就是为你的博客网站做一些个性化的定制,打开根目录下的_config.yml 文件.修改文件内的参数,<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: xxx的博客                 //博客网站的title  </span><br><span class="line">subtitle:                      //子标题  </span><br><span class="line">description: 前端,博客          //网站描述  </span><br><span class="line">author: xxx                   //网站作者  </span><br><span class="line">language: zh-Hans            //网站语言,用于本地化  </span><br><span class="line">....                         // 等其它配置</span><br></pre></td></tr></table></figure></p>
-<h3 id="关联远程仓库"><a href="#关联远程仓库" class="headerlink" title="关联远程仓库"></a>关联远程仓库</h3><p> 博客搭建好之后,你需要做的是把博客发布到 github 上,首先你需要在 github 上新建一个仓库,命名和你本地新建的文件夹一样, username.githhub.io 值得注意的是,这里的 username 必须和你的github 用户名一样,大小写也要一样.然后你需要进入你的本地文件夹,关联你的远程仓库.</p>
-<h3 id="首先创建一个本地仓库"><a href="#首先创建一个本地仓库" class="headerlink" title="首先创建一个本地仓库"></a>首先创建一个本地仓库</h3> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-<h3 id="然后"><a href="#然后" class="headerlink" title="然后"></a>然后</h3><p> <code>$ git remote add origin git@github.com:username/username.github.io.git</code></p>
-<p> 和你github仓库做关联(这个地址就是你github上项目clone的地址)<br> 然后我们只要把代码推到远程仓库就行了,不过这里我们要有个约定,我们在 master 上发布博客,在 dev 分支上修改我们的博客内容和项目配置,也就是说我们发布博客后,master 分支上就是我们的博客的静态文件,dev 分支上的代码就是我们实际维护的博客内容</p>
-<h3 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h3><p>发布之前我们先安装 hexo 的一键部署命令工具</p>
-<h4 id="通过npm安装"><a href="#通过npm安装" class="headerlink" title="通过npm安装"></a>通过npm安装</h4><p><code>$ npm install hexo-deployer-git --save</code><br>修改部署配置,在项目根目录下的_config.yml 中添加如下配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">branch: master  //分支名称 此处是master主分支</span><br><span class="line">repo: git@github.com:HuangShaoNan/HuangShaoNan.github.io.git  //此处记得改成你的 github 仓库的地址</span><br></pre></td></tr></table></figure></p>
-<h3 id="好了，让我们提交你的-first-commit"><a href="#好了，让我们提交你的-first-commit" class="headerlink" title="好了，让我们提交你的 first commit"></a>好了，让我们提交你的 first commit</h3><p>按照约定我们先切分支,通过命令把项目切换到 dev 分支</p>
-<p><code>$ git checkout -b dev</code></p>
-<p>然后 add 你的项目代码</p>
-<p><code>$ git add .</code></p>
-<p>你的第一个提交 commit</p>
-<p><code>$ git commit -m &#39;first commit blog&#39;</code></p>
-<p>然后 push 你的代码到远程<br><code>$ git push origin dev</code> //dev为你的分支</p>
-<h3 id="终于可以发布第一个博客了"><a href="#终于可以发布第一个博客了" class="headerlink" title="终于可以发布第一个博客了"></a>终于可以发布第一个博客了</h3><p>前边我们已经下载好一键发布插件了,只需:</p>
-<p><code>$ hexo deploy</code></p>
-<h2 id="然后你就可以看到一个属于你的-github-io-的网站了"><a href="#然后你就可以看到一个属于你的-github-io-的网站了" class="headerlink" title="然后你就可以看到一个属于你的 github.io 的网站了"></a>然后你就可以看到一个属于你的 github.io 的网站了</h2><p>这里要注意下:第一次发布完会在本地项目目录中生成一个public文件,下次发布时要先删除public,为了方便我们直接在npm脚本中添加一个npm命令:<br>在根目录的package.json中加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: </span><br><span class="line">    &#123;</span><br><span class="line">        &quot;deploy&quot;: &quot;rm -rf public &amp;&amp; hexo deploy&quot;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>下次发布时 执行 npm run deploy就ok了。</p>
-<p>到此我们的博客已经成功搭建,hexo还为我们提供了不同的主题，我们可以切换成自己喜好的主题.</p>
-<h3 id="改变你的博客网站主题"><a href="#改变你的博客网站主题" class="headerlink" title="改变你的博客网站主题"></a>改变你的博客网站主题</h3><p>个人比较推荐的是 next ,大量的留白,让你的博客看起来简洁大方,或则你喜欢其它的主题也行,你需要在你的博客文件夹里clone下你需要的主题</p>
-<p><code>$ git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
-<p>克隆完成后你会发现在项目目录themes目录下多了个next文件，没错 这就是我们clone下来的主题文件，themes文件下管理着我们的主题文件.<br>我们会发现next目下也有一个 _config.yml文件， 为了区分，我们可以起两个名字， 在根目录下的 _config.yml文件为站点配置,next目录下的为主题配置。<br>然后我们进入站点配置中 修改: </p>
-<p><code>$ theme: next</code> // 修改主题为next</p>
-<p>然后 hexo s 就能看到你修改的主题生效了,为了防止 clone 下来的主题文件和自己的博客文件冲突,我删除了clone 下来的 .git 文件,具体步骤为:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">进入到next文件下 执行 ls -a 查看.git文件是否存在，存在的话执行 rm -rf .git 删除.git文件，再次 ls -a 查看</span><br><span class="line">添加next文件更改, 进入到根目录下 执行 $ git add .</span><br><span class="line">提交修改 $ git commit -m &apos;add next 主题&apos;</span><br><span class="line">push到远程 $ git push origin dev</span><br><span class="line">最后别忘了发布你的博客 npm run deploy 发布完成后 你就可以在网址中访问你的userName.github.io博客了</span><br></pre></td></tr></table></figure></p>
-<p>当然除了更换主题外，还可以设置页面布局的方式，具体配置可以进入到next文件下的 _config.yml文件进行修改.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -498,10 +358,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -509,6 +370,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -529,8 +394,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -582,6 +456,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-路由跳转问题"><span class="nav-number">1.</span> <span class="nav-text">1.路由跳转问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-带参返回上一页几种方法"><span class="nav-number">2.</span> <span class="nav-text">2.带参返回上一页几种方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法一"><span class="nav-number">2.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法二"><span class="nav-number">2.2.</span> <span class="nav-text">方法二</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法三"><span class="nav-number">2.3.</span> <span class="nav-text">方法三</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法四"><span class="nav-number">2.4.</span> <span class="nav-text">方法四</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-小程序项目包大小限制"><span class="nav-number">3.</span> <span class="nav-text">3.小程序项目包大小限制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一-小程序包现默认大小为2M-超出将无法上传，下面说一下对小程序项目包大小的一些处理"><span class="nav-number">3.1.</span> <span class="nav-text">一.小程序包现默认大小为2M,超出将无法上传，下面说一下对小程序项目包大小的一些处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二-进行分包加载处理，传送门"><span class="nav-number">3.2.</span> <span class="nav-text">二.进行分包加载处理，传送门</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -723,6 +613,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
